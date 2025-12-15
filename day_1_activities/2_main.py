@@ -127,7 +127,7 @@ print(students[-1]['HR'])
 # we are asking the user to input their name
 # then we are checking if the name is in the data
 # if the name is in the data we are printing the name and "this works"
-name = input("what is you name?") 
+name = input("what is your name?") 
 for student in students:
     if name == student['Combo,Name']:
         print(student['Combo,Name'])
