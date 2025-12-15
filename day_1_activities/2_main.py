@@ -85,28 +85,34 @@ print(students[-1]['HR'])
 #and printing the name and email of the students
 #we are also printing a line of underscores to separate the students
 #we are also printing a line of underscores to separate the students
-for student in students:
-    print(student['Combo,Name'])
-    print(student['Email'][0])
-    print(student['Email'][1])
-    print("_"*25)
+# for student in students:
+#     print(student['Combo,Name'])
+#     print(student['Email'][0])
+#     print(student['Email'][1])
+#     print("_"*25)
 
-    #GET THE HOMEROOMS AND CPS ID AND GRADE LEVEL
+#     #GET THE HOMEROOMS AND CPS ID AND GRADE LEVEL
    
-    print(student['GL'])
-    print(student['CPSID'])
-    print(student['HR'])
-    if student['GL'] >= 10:
-        print("You can go off campus")
-    print("_"*25)
+#     print(student['GL'])
+#     print(student['CPSID'])
+#     print(student['HR'])
+#     if student['GL'] >= 10:
+#         print("You can go off campus")
+#     print("_"*25)
 
     
-if student['LName'][0] == "R":
-    print("Your name starts with R")
-    print(student['Combo,Name'])
-    print(student['HR'])
-print("_"*25)
+# if student['LName'][0] == "R":
+#     print("Your name starts with R")
+#     print(student['Combo,Name'])
+#     print(student['HR'])
+# print("_"*25)
 
+# #IF THE LAST NAME STARTS WITH THE LETTER L
+# #BREAK OUT OF THE LOOP 
+
+# if student['LName'][0] == ['L']:
+#     break
+# print("_"*25)
 # What does the loop variable student represent on each pass?
 
 # How many times will this loop run?
@@ -121,11 +127,11 @@ print("_"*25)
 # we are asking the user to input their name
 # then we are checking if the name is in the data
 # if the name is in the data we are printing the name and "this works"
-#name = input("what is you name?") 
-#for student in students:
-    #if name == student['Combo,Name']:
-        #print(student['Combo,Name'])
-        #print("this works")
+name = input("what is you name?") 
+for student in students:
+    if name == student['Combo,Name']:
+        print(student['Combo,Name'])
+        print("this works")
 
 # What is the goal of this search?
 
