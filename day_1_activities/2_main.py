@@ -85,11 +85,27 @@ print(students[-1]['HR'])
 #and printing the name and email of the students
 #we are also printing a line of underscores to separate the students
 #we are also printing a line of underscores to separate the students
-#for student in students:
-    #print(student['Combo,Name'])
-    #print(student['Email'][0])
-    #print(student['Email'][1])
-    #print("_"*25)
+for student in students:
+    print(student['Combo,Name'])
+    print(student['Email'][0])
+    print(student['Email'][1])
+    print("_"*25)
+
+    #GET THE HOMEROOMS AND CPS ID AND GRADE LEVEL
+   
+    print(student['GL'])
+    print(student['CPSID'])
+    print(student['HR'])
+    if student['GL'] >= 10:
+        print("You can go off campus")
+    print("_"*25)
+
+    
+if student['LName'][0] == "R":
+    print("Your name starts with R")
+    print(student['Combo,Name'])
+    print(student['HR'])
+print("_"*25)
 
 # What does the loop variable student represent on each pass?
 
