@@ -16,4 +16,4 @@ students = [{
     "Email":[EMAIL1, EMAIL2]
 }]
 
-
+print(students)
