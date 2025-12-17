@@ -1,5 +1,5 @@
-Fname = input("what is your first name")
-ID = input("What is your 8 digit ID?")
+Fname = input("What is your first name?")
+ID = int(input("What is your 8 digit ID?"))
 LNAME = input("what is your Last Name?")
 MNAME = input("What is your middle name?")
 HR = input("what is your homeroom?")
@@ -11,9 +11,20 @@ students = [{
     "LName": LNAME,
     "FName": Fname,
     "MName": MNAME,
-    "HR": HR,
+    'HR': HR,
     "GL": GL,
     "Email":[EMAIL1, EMAIL2]
 }]
-
-print(students)
+x = int("37") + int("1")
+print("Your information:", students)
+print("There are now ",x,"students in the school system")
+print("\n--- Student Information ---")
+print("CPS ID:", students["CPSID"])
+print("Last Name:", students["LName"])
+print("First Name:", students["FName"])
+print("Middle Name:", students["MName"])
+print("Homeroom:", students["HR"])
+print("Grade Level:", students["GL"])
+print("Emails:")
+print("  -", students["Email"][0])
+print("  -", students["Email"][1])
